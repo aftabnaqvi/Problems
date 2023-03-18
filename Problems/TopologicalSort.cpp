@@ -152,61 +152,65 @@ public:
     std::vector<Node*> _sortedNodes;
 };
 
-int main(){
-//    n0 n1 n2 n3 n4 n5
-//    Sorted Nodes:
-//    n0 n5 n1 n2 n3 n4
-    
-    
-    Graph graph("g1");
-    
-    Node node0("n0");
-    graph.addNode(&node0);
-    node0.addDownDep("n1");
-    node0.addDownDep("n2");
-    node0.addDownDep("n5");
-    
-    Node node1("n1");
-    graph.addNode(&node1);
-    node1.addDownDep("n3");
-    node1.addDownDep("n2");
-    node1.addUpDep("n0");
-    // ----------------------------------
-    
-    Node node2("n2");
-    graph.addNode(&node2);
-    node2.addDownDep("n3");
-    node2.addDownDep("n4");
-    node2.addUpDep("n0");
-    node2.addUpDep("n1");
-    
-    Node node3("n3");
-    graph.addNode(&node3);
-    node3.addDownDep("n4");
-    node3.addUpDep("n1");
-    node3.addUpDep("n2");
-    
-    Node node4("n4");
-    graph.addNode(&node4);
-    node4.addUpDep("n2");
-    node4.addUpDep("n5");
-    
-    // -------------------------------------
-    
-    Node node5("n5");
-    graph.addNode(&node5);
-    node5.addDownDep("n4");
-    node2.addUpDep("n0");
-    
-    
-//    node5.addUpDep("n3");
-//    node5.addUpDep("n4");
-    
-    // ----------------------- sort now ------
-    
-    graph.displayGraphNodes();
-    graph.doTopSort();
-    graph.displayGraphSortedNodes();
-    
-    return 0;
+void call () {
+    //    n0 n1 n2 n3 n4 n5
+    //    Sorted Nodes:
+    //    n0 n5 n1 n2 n3 n4
+        
+        
+        Graph graph("g1");
+        
+        Node node0("n0");
+        graph.addNode(&node0);
+        node0.addDownDep("n1");
+        node0.addDownDep("n2");
+        node0.addDownDep("n5");
+        
+        Node node1("n1");
+        graph.addNode(&node1);
+        node1.addDownDep("n3");
+        node1.addDownDep("n2");
+        node1.addUpDep("n0");
+        // ----------------------------------
+        
+        Node node2("n2");
+        graph.addNode(&node2);
+        node2.addDownDep("n3");
+        node2.addDownDep("n4");
+        node2.addUpDep("n0");
+        node2.addUpDep("n1");
+        
+        Node node3("n3");
+        graph.addNode(&node3);
+        node3.addDownDep("n4");
+        node3.addUpDep("n1");
+        node3.addUpDep("n2");
+        
+        Node node4("n4");
+        graph.addNode(&node4);
+        node4.addUpDep("n2");
+        node4.addUpDep("n5");
+        
+        // -------------------------------------
+        
+        Node node5("n5");
+        graph.addNode(&node5);
+        node5.addDownDep("n4");
+        node2.addUpDep("n0");
+        
+        
+    //    node5.addUpDep("n3");
+    //    node5.addUpDep("n4");
+        
+        // ----------------------- sort now ------
+        
+        graph.displayGraphNodes();
+        graph.doTopSort();
+        graph.displayGraphSortedNodes();
 }
+
+//int main(){
+//    call();
+//    
+//    return 0;
+//}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA18A8DA29C58F3600DB1535 /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA18A8D829C58F3600DB1535 /* Recursion.cpp */; };
 		FAECE5F229B9B26400C9D618 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE5F129B9B26400C9D618 /* main.cpp */; };
 		FAECE5FA29B9B2F600C9D618 /* SmartPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE5F829B9B2F600C9D618 /* SmartPointer.cpp */; };
 		FAECE60229BC586300C9D618 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE60129BC586300C9D618 /* main.cpp */; };
@@ -36,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA18A8D829C58F3600DB1535 /* Recursion.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Recursion.cpp; sourceTree = "<group>"; };
+		FA18A8D929C58F3600DB1535 /* Recursion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recursion.hpp; sourceTree = "<group>"; };
 		FAECE5EE29B9B26400C9D618 /* Problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Problems; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAECE5F129B9B26400C9D618 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FAECE5F829B9B2F600C9D618 /* SmartPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SmartPointer.cpp; sourceTree = "<group>"; };
@@ -91,6 +94,8 @@
 				FAECE5F929B9B2F600C9D618 /* SmartPointer.hpp */,
 				FAECE60829BF903900C9D618 /* TopologicalSort.cpp */,
 				FAECE60929BF903900C9D618 /* TopologicalSort.hpp */,
+				FA18A8D829C58F3600DB1535 /* Recursion.cpp */,
+				FA18A8D929C58F3600DB1535 /* Recursion.hpp */,
 			);
 			path = Problems;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA18A8DA29C58F3600DB1535 /* Recursion.cpp in Sources */,
 				FAECE60A29BF903900C9D618 /* TopologicalSort.cpp in Sources */,
 				FAECE5F229B9B26400C9D618 /* main.cpp in Sources */,
 				FAECE5FA29B9B2F600C9D618 /* SmartPointer.cpp in Sources */,

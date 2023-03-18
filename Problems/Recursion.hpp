@@ -8,6 +8,13 @@
 #ifndef Recursion_hpp
 #define Recursion_hpp
 
-#include <stdio.h>
+#include <iostream>
+#include <vector>
+
+std::string numTobinary(int number, std::string& result);
+
+int summation(int number);
+
+int binarySearch(const std::vector<int>& input, int left, int right, int targetNumber);
 
 #endif /* Recursion_hpp */
