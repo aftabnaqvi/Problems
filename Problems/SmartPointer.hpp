@@ -30,14 +30,14 @@ public:
         }
 
         m_pData = pData;
-        ++*m_pRefCount;
+        ++(*m_pRefCount);
     }
     
     SharedPointer(const SharedPointer<T>& rhs){
         std::cout<<"SharedPointer - copy ctor" << std::endl;
         m_pRefCount = rhs.m_pRefCount;
         m_pData = rhs.m_pData;
-        ++*m_pRefCount;
+        ++(*m_pRefCount);
     }
   
     // Assignment operator
@@ -47,7 +47,7 @@ public:
         }
         
         std::cout<<"operator= called" <<std::endl;
-        --*m_pRefCount;
+        --(*m_pRefCount);
         if (*m_pRefCount == 0) {
             std::cout<<"operator= -- refCount: " << *m_pRefCount << std::endl;
             delete m_pData;
@@ -56,12 +56,12 @@ public:
 
         m_pRefCount = rhs.m_pRefCount;
         m_pData = rhs.m_pData;
-        ++*m_pRefCount;
+        ++(*m_pRefCount);
         return *this;
     }
 
     ~SharedPointer() {
-        if(--*m_pRefCount == 0) {
+        if(--(*m_pRefCount) == 0) {
             std::cout<<"~SharedPointer dtor: refCount: " << *m_pRefCount <<std::endl;
             delete m_pData;
             m_pData = nullptr;
@@ -70,7 +70,7 @@ public:
         }
     }
 
-    T operator*(){
+    T& operator*(){
         return *m_pData;
     }
 
