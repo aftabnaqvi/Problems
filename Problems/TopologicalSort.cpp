@@ -74,13 +74,6 @@ public:
       auto node = _nodes[srcIndex];
       if (node != nullptr)
       {
-//        for (auto& dep :node->_upDepList)
-//        {
-//            auto nodeIndex = getNode(dep);
-//            if (!visited[nodeIndex]) {
-//                i = dfs(i, nodeIndex, visited);
-//            }
-//        }
           for (auto& dep :node->_downDepList)
           {
               auto nodeIndex = getNode(dep);
