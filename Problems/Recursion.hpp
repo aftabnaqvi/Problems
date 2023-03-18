@@ -17,4 +17,6 @@ int summation(int number);
 
 int binarySearch(const std::vector<int>& input, int left, int right, int targetNumber);
 
+void mergeSort(std::vector<int>& input, int start, int end);
+
 #endif /* Recursion_hpp */
