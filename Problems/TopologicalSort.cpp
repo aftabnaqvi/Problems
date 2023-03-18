@@ -153,6 +153,11 @@ public:
 };
 
 int main(){
+//    n0 n1 n2 n3 n4 n5
+//    Sorted Nodes:
+//    n0 n5 n1 n2 n3 n4
+    
+    
     Graph graph("g1");
     
     Node node0("n0");
