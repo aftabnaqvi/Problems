@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		FA18A8DA29C58F3600DB1535 /* Recursion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA18A8D829C58F3600DB1535 /* Recursion.cpp */; };
 		FA18A8DD29C6FB3600DB1535 /* Trees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA18A8DB29C6FB3600DB1535 /* Trees.cpp */; };
+		FA5E404929D806710067A3DA /* Singleton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E404729D806710067A3DA /* Singleton.cpp */; };
+		FA5E404C29D818910067A3DA /* Factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E404A29D818910067A3DA /* Factory.cpp */; };
+		FA5E404F29D81D1C0067A3DA /* Adapter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E404D29D81D1C0067A3DA /* Adapter.cpp */; };
+		FA5E405229D825110067A3DA /* Pub-Sub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E405029D825110067A3DA /* Pub-Sub.cpp */; };
+		FA5E405529D82D320067A3DA /* Observer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E405329D82D320067A3DA /* Observer.cpp */; };
+		FA5E405829D82DE90067A3DA /* Observer-multithreaded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FA5E405629D82DE90067A3DA /* Observer-multithreaded.cpp */; };
 		FAECE5F229B9B26400C9D618 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE5F129B9B26400C9D618 /* main.cpp */; };
 		FAECE5FA29B9B2F600C9D618 /* SmartPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE5F829B9B2F600C9D618 /* SmartPointer.cpp */; };
 		FAECE60229BC586300C9D618 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FAECE60129BC586300C9D618 /* main.cpp */; };
@@ -42,6 +48,18 @@
 		FA18A8D929C58F3600DB1535 /* Recursion.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Recursion.hpp; sourceTree = "<group>"; };
 		FA18A8DB29C6FB3600DB1535 /* Trees.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Trees.cpp; sourceTree = "<group>"; };
 		FA18A8DC29C6FB3600DB1535 /* Trees.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Trees.hpp; sourceTree = "<group>"; };
+		FA5E404729D806710067A3DA /* Singleton.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Singleton.cpp; sourceTree = "<group>"; };
+		FA5E404829D806710067A3DA /* Singleton.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Singleton.hpp; sourceTree = "<group>"; };
+		FA5E404A29D818910067A3DA /* Factory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Factory.cpp; sourceTree = "<group>"; };
+		FA5E404B29D818910067A3DA /* Factory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Factory.hpp; sourceTree = "<group>"; };
+		FA5E404D29D81D1C0067A3DA /* Adapter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Adapter.cpp; sourceTree = "<group>"; };
+		FA5E404E29D81D1C0067A3DA /* Adapter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Adapter.hpp; sourceTree = "<group>"; };
+		FA5E405029D825110067A3DA /* Pub-Sub.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Pub-Sub.cpp"; sourceTree = "<group>"; };
+		FA5E405129D825110067A3DA /* Pub-Sub.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Pub-Sub.hpp"; sourceTree = "<group>"; };
+		FA5E405329D82D320067A3DA /* Observer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Observer.cpp; sourceTree = "<group>"; };
+		FA5E405429D82D320067A3DA /* Observer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Observer.hpp; sourceTree = "<group>"; };
+		FA5E405629D82DE90067A3DA /* Observer-multithreaded.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Observer-multithreaded.cpp"; sourceTree = "<group>"; };
+		FA5E405729D82DE90067A3DA /* Observer-multithreaded.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "Observer-multithreaded.hpp"; sourceTree = "<group>"; };
 		FAECE5EE29B9B26400C9D618 /* Problems */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Problems; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAECE5F129B9B26400C9D618 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FAECE5F829B9B2F600C9D618 /* SmartPointer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SmartPointer.cpp; sourceTree = "<group>"; };
@@ -71,6 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA5E404629D805EA0067A3DA /* Design Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				FA5E404729D806710067A3DA /* Singleton.cpp */,
+				FA5E404829D806710067A3DA /* Singleton.hpp */,
+				FA5E404A29D818910067A3DA /* Factory.cpp */,
+				FA5E404B29D818910067A3DA /* Factory.hpp */,
+				FA5E404D29D81D1C0067A3DA /* Adapter.cpp */,
+				FA5E404E29D81D1C0067A3DA /* Adapter.hpp */,
+				FA5E405029D825110067A3DA /* Pub-Sub.cpp */,
+				FA5E405129D825110067A3DA /* Pub-Sub.hpp */,
+				FA5E405329D82D320067A3DA /* Observer.cpp */,
+				FA5E405429D82D320067A3DA /* Observer.hpp */,
+				FA5E405629D82DE90067A3DA /* Observer-multithreaded.cpp */,
+				FA5E405729D82DE90067A3DA /* Observer-multithreaded.hpp */,
+			);
+			path = "Design Patterns";
+			sourceTree = "<group>";
+		};
 		FAECE5E529B9B26400C9D618 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +129,7 @@
 		FAECE5F029B9B26400C9D618 /* Problems */ = {
 			isa = PBXGroup;
 			children = (
+				FA5E404629D805EA0067A3DA /* Design Patterns */,
 				FAECE5F129B9B26400C9D618 /* main.cpp */,
 				FAECE5F829B9B2F600C9D618 /* SmartPointer.cpp */,
 				FAECE5F929B9B2F600C9D618 /* SmartPointer.hpp */,
@@ -194,8 +232,14 @@
 			files = (
 				FA18A8DA29C58F3600DB1535 /* Recursion.cpp in Sources */,
 				FA18A8DD29C6FB3600DB1535 /* Trees.cpp in Sources */,
+				FA5E404C29D818910067A3DA /* Factory.cpp in Sources */,
 				FAECE60A29BF903900C9D618 /* TopologicalSort.cpp in Sources */,
+				FA5E404929D806710067A3DA /* Singleton.cpp in Sources */,
+				FA5E404F29D81D1C0067A3DA /* Adapter.cpp in Sources */,
+				FA5E405829D82DE90067A3DA /* Observer-multithreaded.cpp in Sources */,
 				FAECE5F229B9B26400C9D618 /* main.cpp in Sources */,
+				FA5E405529D82D320067A3DA /* Observer.cpp in Sources */,
+				FA5E405229D825110067A3DA /* Pub-Sub.cpp in Sources */,
 				FAECE5FA29B9B2F600C9D618 /* SmartPointer.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -165,7 +165,7 @@ void callTreeFucntions(){
     cout << "isSameTreesUsingStacks: " << tree.isSameTreesUsingStack(root1, root2) << endl;
 }
 
-int main(){
-    callTreeFucntions();
-    return 0;
-}
+//int main(){
+//    callTreeFucntions();
+//    return 0;
+//}
